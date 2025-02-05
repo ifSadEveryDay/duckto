@@ -90,7 +90,7 @@ async function handleCompletion(request) {
     const content = messagesPrepare(messages)
     return createCompletion(model, content, returnStream)
   } catch (err) {
-    return error(500, err.message)
+    return error(500, err)
   }
 }
 
