@@ -103,7 +103,7 @@ async function createCompletion(model, content, returnStream, retryCount = 0) {
         ...config.FAKE_HEADERS,
         Accept: 'text/event-stream',
         'Content-Type': 'application/json',
-        'x-vqd-4': '4-289152877898873451444248439663500864967',
+        'X-Vqd-4': '4-289152877898873451444248439663500864967',
       },
       body: JSON.stringify({
         model: model,
@@ -233,7 +233,7 @@ async function requestToken() {
         'x-vqd-accept': '1',
       },
     })
-    const token = response.headers.get('x-vqd-4')
+    const token = response.headers.get('X-Vqd-4')
     return token
   } catch (error) {
     console.log("Request token error: ", err)
