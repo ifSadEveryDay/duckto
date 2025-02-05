@@ -17,7 +17,7 @@ class Config {
       'Accept-Encoding': 'gzip, deflate, br, zstd',
       'Accept-Language': 'zh-CN,zh;q=0.9',
       Origin: 'https://duckduckgo.com/',
-      Cookie: 'dcm=3',
+      Cookie: 'dcm=3; dcs=1',
       Dnt: '1',
       Priority: 'u=1, i',
       Referer: 'https://duckduckgo.com/',
