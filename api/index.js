@@ -103,7 +103,7 @@ async function createCompletion(model, content, returnStream, retryCount = 0) {
         ...config.FAKE_HEADERS,
         Accept: 'text/event-stream',
         'Content-Type': 'application/json',
-        'x-vqd-4': token,
+        'x-vqd-4': '4-289152877898873451444248439663500864967',
       },
       body: JSON.stringify({
         model: model,
