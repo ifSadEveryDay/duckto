@@ -95,7 +95,7 @@ async function handleCompletion(request) {
 }
 
 async function createCompletion(model, content, returnStream, retryCount = 0) {
-  const token = await requestToken()
+  // const token = await requestToken()
   try {
     const response = await fetch(`https://duckduckgo.com/duckchat/v1/chat`, {
       method: 'POST',
